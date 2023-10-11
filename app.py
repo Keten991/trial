@@ -13,8 +13,6 @@ DB_NAME =  os.environ.get("DB_NAME")
 
 client = MongoClient(MONGODB_URI)
 db = client[DB_NAME]
-client = MongoClient('mongodb+srv://test:sparta@cluster0.i8ofwto.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp')
-db = client.dbsparta
 
 app = Flask(__name__)
 
